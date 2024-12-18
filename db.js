@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-const mongoURI="mongodb+srv://shivamsy8264:shivam8764@newsplus.an838.mongodb.net/NewsBook";
+const mongoURI="mongodb+srv://shivamsy8264:shivam8764@newsplus.an838.mongodb.net/NewsBook?retryWrites=true&w=majority";
 const connectToMongo = async () => {
     try {
         await mongoose.connect(mongoURI, {
