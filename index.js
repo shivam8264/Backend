@@ -11,7 +11,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
     cors: {
-        origin: 'https://newspluslive.netlify.app',
+        origin: process.env.REACT_APP_FRONTEND_URL,
         methods: ['GET', 'POST']
     }
 });
